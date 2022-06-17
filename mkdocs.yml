@@ -6,7 +6,7 @@ site_url: https://school-digital-agenda.github.io/SDADocs
 copyright: rfasioli.github.io
 
 extra_css:
-  - /assets/css/radar.css
+  - assets/css/radar.css
 
 nav:
   - Inicio: index.md
