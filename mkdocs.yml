@@ -2,7 +2,8 @@ theme:
   name: material
 
 site_name: School Digital Agenda
-site_url: https://school-digital-agenda.github.io/
+site_url: https://school-digital-agenda.github.io/SDADocs
+copyright: rfasioli.github.io
 
 extra_css:
   - /assets/css/radar.css
