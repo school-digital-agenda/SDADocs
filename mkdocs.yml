@@ -3,10 +3,15 @@ theme:
 
 site_name: School Digital Agenda
 site_url: https://school-digital-agenda.github.io/
+
+extra_css:
+  - /assets/css/radar.css
+
 nav:
   - Inicio: index.md
   - Arquitetura:
     - Granularidade de micro-serviços: ref-arch/granularidade.md
     - Arquitetura de referência: ref-arch/ref-arch.md
   - Tech Radar:
+    - Ciclo de Vida: tech-radar/life-cycle.md
     - Tech Radar: tech-radar/tech-radar.md
