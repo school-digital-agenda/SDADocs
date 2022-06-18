@@ -36,7 +36,7 @@ function toEnty(row) {
     }
 }
 
-fetch('/assets/stubs/techradar.csv')
+fetch('/SDADocs/assets/stubs/techradar.csv')
   .then(function (resp) {
     return resp.text();
   })
