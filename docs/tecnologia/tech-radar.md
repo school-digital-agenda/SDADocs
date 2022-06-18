@@ -9,14 +9,19 @@
 
 O tech radar tem como objetivo principal auxiliar nosso time de arquitetura na escolha da tecnologia a ser aplicada ao projeto. Para isso as tecnologias são qualificados em relação a sua recomendação de uso:
 
-!!! info "Qualificação das Recomendações de Uso"
-    - **Evite** - Usado para tecnologias ainda não comprovadas pelo mercado, mas também para dizer *“não inicie nada novo com esta tecnologia”*. Ou por ser algo novo e desconhecido, como também por esperiências negativas ou até mesmo por já estar ultrapassada.
-    - **Avalie** - Indica que vale a pena explorar a tecnologia, com o objetivo de entender qual o seu impacto (positivo ou negativo) para nossas soluções. Nesta fase deve-se investir algum esforço em estudos, pesquisa e provas de conceito, antes de passar a utilizá-la.
-    - **Experimente** - Reservado para tecnologias que entendemos que valem a pena para o nosso produto. a tecnologia já foi provada de alguma forma, porém ainda não foi aplicada em larga escala para confirmar sua aplicabilidade.
-    - **Adote** - Tecnologia já provou sua aplicabilidade, avaliar sua adoção conforme recomendações de uso.
+!!! danger "Evite"
+    Usado para tecnologias ainda não comprovadas pelo mercado, mas também para dizer *“não inicie nada novo com esta tecnologia”*. Ou por ser algo novo e desconhecido, como também por esperiências negativas ou até mesmo por já estar ultrapassada.
 
-!!! tip "Dica"
-    Para compreender como classificamos estas recomentações veja o [Ciclo de vida][1] das tecnologias.
+!!! question "Avalie"
+    Indica que vale a pena explorar a tecnologia, com o objetivo de entender qual o seu impacto (positivo ou negativo) para nossas soluções. Nesta fase deve-se investir algum esforço em estudos, pesquisa e provas de conceito, antes de passar a utilizá-la.
+
+!!! note "Experimente"
+    Reservado para tecnologias que entendemos que valem a pena para o nosso produto. a tecnologia já foi provada de alguma forma, porém ainda não foi aplicada em larga escala para confirmar sua aplicabilidade.
+
+!!! check "Adote"
+    Tecnologia já provou sua aplicabilidade, avaliar sua adoção conforme recomendações de uso.
+
+>    Para compreender como classificamos estas recomentações veja o [Ciclo de vida][1] das tecnologias.
 
 -----------------------------------
 ## O Radar
