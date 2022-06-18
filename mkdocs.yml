@@ -1,18 +1,25 @@
 theme:
   name: material
+  favicon: /SDADocs/assets/images/favicon.png
 
 site_name: School Digital Agenda
 site_url: https://school-digital-agenda.github.io/SDADocs
 copyright: rfasioli.github.io
 
 extra_css:
-  - /assets/css/radar.css
+  - /SDADocs/assets/css/radar.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
 nav:
   - Inicio: index.md
-  - Arquitetura:
-    - Granularidade de micro-serviços: ref-arch/granularidade.md
-    - Arquitetura de referência: ref-arch/ref-arch.md
-  - Tech Radar:
-    - Ciclo de Vida: tech-radar/life-cycle.md
-    - Tech Radar: tech-radar/tech-radar.md
+  - Stack de tecnologia:
+    - Tech Radar: tecnologia/tech-radar.md
+    - Tech Sheet: tecnologia/tech-sheet.md
+    - Ciclo de Vida: tecnologia/life-cycle.md
+  - Release Notes: release.md
