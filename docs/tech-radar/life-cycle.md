@@ -8,4 +8,4 @@ Dentro do ciclo de vida do **tech radar** as tecnologias são classificadas pela
 - **Experimente** - Reservado para tecnologias que entendemos que valem a pena para o nosso produto, porém ainda não provamos em larga escala.
 - **Adote** - Tecnologia já provou sua aplicabilidade, avaliar sua adoção conforme recomendações.
 
-![Ciclo de vida](/assets/images/tech-radar/lifecycle.png)
+![Ciclo de vida](../assets/images/tech-radar/lifecycle.png)
