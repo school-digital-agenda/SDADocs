@@ -1,6 +1,6 @@
 site_name: School Digital Agenda
 site_url: https://school-digital-agenda.github.io/SDADocs
-copyright: rfasioli.github.io
+copyright: Copyright &copy; 2022 Rodrigo Fasioli
 
 theme:
   name: material
@@ -10,6 +10,7 @@ theme:
     # - content.code.annotate
     # - content.tooltips
     - navigation.indexes
+    - navigation.instant
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -38,7 +39,13 @@ theme:
   language: pt-BR
 
 extra_css:
-  - /SDADocs/assets/css/radar.css
+  - /SDADocs/assets/stylesheets/radar.css
+  
+extra:
+  generator: false
+
+plugins:
+  - git-revision-date
 
 markdown_extensions:
   - abbr
@@ -82,11 +89,11 @@ markdown_extensions:
 
 
 nav:
-  - Inicio: index.md
+  - index.md
   - Stack de tecnologia:
     - Tech Radar: tecnologia/tech-radar.md
     - Tech Sheet: tecnologia/tech-sheet.md
     - Ciclo de Vida: tecnologia/life-cycle.md
-  - Arquitetura de referência:
-    - Granularidade de micro-serviços: ref-arch/granularidade
+  - Arquitetura:
+    - Granularidade de micro-serviços: arquitetura/granularidade
   - Release Notes: release.md

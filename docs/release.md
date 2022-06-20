@@ -13,4 +13,4 @@
 [1]: /SDADocs/tecnologia/tech-radar
 [2]: /SDADocs/tecnologia/tech-sheet
 [3]: /SDADocs/tecnologia/life-cycle
-[4]: /SDADocs/ref-arch/granularidade
+[4]: /SDADocs/arquitetura/granularidade

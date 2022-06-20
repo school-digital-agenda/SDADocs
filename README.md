@@ -18,6 +18,9 @@ pip install mkdocs
 
 # Instalar MkDocs Material
 pip install mkdocs-material
+
+# Install Git Revision Date
+pip install mkdocs-git-revision-date-plugin
 ```
 
 ### Configurar IDE
