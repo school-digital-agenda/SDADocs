@@ -97,13 +97,15 @@
         O Kubernetes é um sistema de orquestração de contêineres de código aberto para automatizar a implantação, o dimensionamento e o gerenciamento de software.
 
         !!! note "Experimente"
-            Estamos avaliando sua utilização
-    
+            Estamos avaliando sua utilização em conjunto com o EKS
+
+    ??? note "Amazon EKS"
+
     ??? question "CircleCI"
 
     ??? question "Jenkins"
 
-    ??? danger "ECS"
+    ??? danger "Amazon ECS"
         O Amazon ECS é um serviço de orquestração de contêineres totalmente gerenciado que ajuda você a implementar, gerenciar facilmente e escalar aplicações em contêiner. Ele se integra completamente ao restante da plataforma AWS para fornecer uma solução segura e fácil de usar para a execução de cargas de trabalho de contêiner na nuvem e agora em sua infraestrutura com o Amazon ECS Anywhere.
 
         !!! danger "Não utilize!"

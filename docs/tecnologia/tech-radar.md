@@ -5,6 +5,20 @@
 
 # Tech radar
 
+## O Radar
+
+<div class="svg-box">
+    <svg id="radar"></svg>
+</div>
+
+-----------------------------------
+
+!!! tip "Dica! (Tech Sheet)"
+    Para saber mais sobre cada tecnologia, veja nossa [Tech Sheet][2].
+
+<script src="/SDADocs/assets/js/radar-content.js"></script>
+
+-----------------------------------
 ## Sobre
 
 O tech radar tem como objetivo principal auxiliar nosso time de arquitetura na escolha da tecnologia a ser aplicada ao projeto. Para isso as tecnologias são qualificados em relação a sua recomendação de uso:
@@ -22,20 +36,6 @@ O tech radar tem como objetivo principal auxiliar nosso time de arquitetura na e
     Tecnologia já provou sua aplicabilidade, avaliar sua adoção conforme recomendações de uso.
 
 >    Para compreender como classificamos estas recomentações veja o [Ciclo de vida][1] das tecnologias.
-
------------------------------------
-## O Radar
-
-<div class="svg-box">
-    <svg id="radar"></svg>
-</div>
-
------------------------------------
-
-!!! tip "Dica! (Tech Sheet)"
-    Para saber mais sobre cada tecnologia, veja nossa [Tech Sheet][2].
-
-<script src="/SDADocs/assets/js/radar-content.js"></script>
 
 [1]:/SDADocs/tecnologia/life-cycle/
 [2]:/SDADocs/tecnologia/tech-sheet/
