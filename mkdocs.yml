@@ -93,5 +93,11 @@ nav:
     - Tech Sheet: tecnologia/tech-sheet.md
     - Ciclo de Vida: tecnologia/life-cycle.md
   - Arquitetura:
+    - Arquitetura de referências: arquitetura/ref-arch
     - Granularidade de micro-serviços: arquitetura/granularidade
+    - Arquitetura de software: arquitetura/software
+    - Padrões: arquitetura/padroes
+    - MVP:
+      - Arquitetura adotada: arquitetura/mvp/index
+      - Avaliações: arquitetura/mvp/avaliacoes
   - Release Notes: release.md
