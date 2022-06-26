@@ -11,6 +11,7 @@ theme:
     # - content.tooltips
     - navigation.indexes
     - navigation.instant
+    - navigation.sections    
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -38,9 +39,6 @@ theme:
     logo: logo
   language: pt-BR
 
-extra_css:
-  - /SDADocs/assets/stylesheets/radar.css
-  
 extra:
   generator: false
 

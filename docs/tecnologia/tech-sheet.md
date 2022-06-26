@@ -4,14 +4,35 @@
     ??? check "Amazon S3"
         O  Amazon S3 é um serviço de armazenamento de objetos que oferece escalabilidade, disponibilidade de dados, segurança e performance. Seu objetivo é armazenar e proteger qualquer volume de dados para uma variedade de casos de uso.
 
-        Recomendamos seu uso para qualquer armazenamento de arquivos dinâmico ou estático.
+        !!! check "Adote"
+            Recomendamos seu uso para qualquer armazenamento de arquivos dinâmico ou estático.
 
         >[Veja mais][10]
 
     ??? note "MongoDB"
+        MongoDB é um banco de dados orientado a documentos multiplataforma. Classificado como um banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas opcionais.
+
     ??? note "Postgres"
+        O Postgres, também conhecido como PostgreSQL, é um sistema de gerenciamento de banco de dados relacional gratuito e de código aberto que enfatiza a extensibilidade e a conformidade com o SQL. Foi originalmente chamado POSTGRES, referindo-se às suas origens como um sucessor do banco de dados Ingres desenvolvido na Universidade da Califórnia, Berkeley.
+
     ??? note "RabbitMQ"
+        !!! abstract inline end "Caracteristicas"
+            - Permite a clusterização
+            - Alta disponibilidade
+            - Espelhamento
+            - Garantia na entrega de mensagens
+            - Priorização de mensagens
+            - Persistência em memória e disco
+            - Federalização
+            - Extenssível por plugins
+
+        RabbitMQ é um message-broker de código aberto que originalmente implementou o **AMQP** e desde então foi estendido com uma arquitetura de plug-in para oferecer suporte ao **Stomp**, **MQTT** e outros protocolos.
+        
+        !!! check "Adote"
+            Recomendamos o seu uso para a troca de mensagens entre aplicações o que permite o processamento assincrono e com alto nível de desacoplamento entre elas.
+
     ??? note "Redis"
+        O Redis é um sistema de armazenamento de estrutura de dados em memória, usado como um banco de dados key-value distribuído, cache e agente de mensagens, com durabilidade opcional. O Redis oferece suporte a diferentes tipos de estruturas de dados abstratas, como strings, listas, mapas, conjuntos, conjuntos classificados, HyperLogLogs, bitmaps, fluxos e índices espaciais.
 
     ??? question "Kafka"
     ??? question "MariaDB"
@@ -25,40 +46,68 @@
 === "Plataformas & Infraestrutura"
  
     ??? check "Github"
-        GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.Recomendamos o uso para armazenamento, versionamento e revisão do código através do git flow.
+        GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.
+        
+        !!! check "Adote"
+            Utilizamos o github para armazenamento, versionamento e revisão do código através do git flow.
 
         > [Veja mais][5]
 
     ??? check "Github Actions"
         O GitHub Actions facilita a automatização de todos os seus fluxos de trabalho de software, agora com CI/CD de classe mundial. Crie, teste e implante seu código diretamente do GitHub.
 
+        !!! check "Adote"
+            Utilize para automatizar as tarefas de build, teste e deploy de aplicações
+
         > [Veja mais][2]
 
     ??? check "Github Pages"
-        GitHub Pages são páginas da Web públicas hospedadas e publicadas por meio do GitHub. A maneira mais rápida.
+        GitHub Pages são páginas da Web públicas hospedadas e publicadas por meio do GitHub.
+
+        !!! check "Adote"
+            Utilize para disponibilizar a documentação de nossas aplicações.
 
         > [Veja mais][3]
 
     ??? check "MkDocs"
         O MkDocs é um gerador de site estático simple e rápido, voltado para a construção de documentação de projetos. Os arquivos de origem da documentação são escritos em Markdown e configurados com um único arquivo de configuração YAML.
 
+        !!! check "Adote"
+            Utilizamos o mkdocs como linguagem para implementar a documentação de nossas aplicações.
+
         > [Veja mais][1]
 
     ??? check "Dependabot"
         O dependabot efetua atualizações de dependência automatizadas incorporadas ao GitHub.
+
+        !!! check "Adote"
+            O dependabot deve ser configurado em todos os nossos repositórios.
 
         > [Veja mais][4]
 
     ??? check "Docker"
         Docker é um conjunto de produtos de plataforma como serviço (PaaS) que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração. Eles podem se comunicar uns com os outros por meio de canais bem definidos. Todos os contêineres são executados por um único kernel do sistema operacional e, portanto, usam menos recursos do que as máquinas virtuais.
 
+        !!! check "Adote"
+            Utilizamos o Docker para gerar imagens que serão executadas em containeres em nossos ambientes cloud, disponibilizando os micro serviços para uso em nossa plataforma.
+
         > [Veja mais][6]
 
     ??? note "Kubernetes"
+        O Kubernetes é um sistema de orquestração de contêineres de código aberto para automatizar a implantação, o dimensionamento e o gerenciamento de software.
 
-    ??? question "Gitlab"
+        !!! note "Experimente"
+            Estamos avaliando sua utilização
+    
     ??? question "CircleCI"
+
     ??? question "Jenkins"
+
+    ??? danger "ECS"
+        O Amazon ECS é um serviço de orquestração de contêineres totalmente gerenciado que ajuda você a implementar, gerenciar facilmente e escalar aplicações em contêiner. Ele se integra completamente ao restante da plataforma AWS para fornecer uma solução segura e fácil de usar para a execução de cargas de trabalho de contêiner na nuvem e agora em sua infraestrutura com o Amazon ECS Anywhere.
+
+        !!! danger "Não utilize!"
+            Apesar das facilidades, NÃO RECOMENDAMOS o seu uso por acoplar a solução a um único provedor cloud. Em seu lugar adotamos o kubernetes e soluções gerenciadas baseadas neste, como o EKS a própria AWS.
 
 === "Ferramentas"
  
@@ -134,6 +183,12 @@
 *[JaCoCo]: Java Code Coverage Tool
 *[IoC]: Inversão de Controle (Inversion of Control)
 *[Java EE]: Java Enterprise Edition
+*[AMQP]: Advanced Message Queueing Protocol
+*[Stomp]: Streaming Text Oriented Messaging Protocol
+*[MQTT]: MQ Telemetry Transaport
+*[ECS]: Elastic Container Service
+*[EKS]: Elastic Kubernetes Service
+*[AWS]: Amazon Web Services
 
 [1]: https://www.mkdocs.org/
 [2]: https://github.com/features/actions
