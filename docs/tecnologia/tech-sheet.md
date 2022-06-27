@@ -130,6 +130,12 @@
         > [Veja mais][9]
 
     ??? note "Keycloak"
+        O Keycloak é um software de código aberto que permitir o *"single sign-on"* com *"Identity and Access Management"* voltado para aplicativos e serviços modernos. Em março de 2018, este projeto da comunidade WildFly está sob a administração da Red Hat, que o utiliza como projeto upstream para seu produto RH-SSO.
+
+        Experimentaremos o Keycloak em nosso MVP.
+
+        >[Veja mais][16]
+
     ??? note "Micrometer"
     ??? note "Grafana"
     ??? note "Prometheus"
@@ -207,3 +213,4 @@
 [13]: https://spring.io/projects/spring-boot
 [14]: https://spring.io/cloud
 [15]: https://12factor.net/
+[16]: https://www.keycloak.org/
