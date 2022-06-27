@@ -130,9 +130,21 @@
         > [Veja mais][9]
 
     ??? note "Keycloak"
+        !!! abstract inline end "Caracteristicas"
+
+            - Solução Open Source
+            - Suporte a múltiplos provedores de identidade
+            - Fácil de customizar
+            - Mantida por desenvolvedores da Redhat
+            - Suporte a MFA
+            - SDK oficial para spring boot
+            - Desenvolvimento de SDKs pela comunidade
+            - Funcionalidades completas
+
         O Keycloak é um software de código aberto que permitir o *"single sign-on"* com *"Identity and Access Management"* voltado para aplicativos e serviços modernos. Em março de 2018, este projeto da comunidade WildFly está sob a administração da Red Hat, que o utiliza como projeto upstream para seu produto RH-SSO.
 
-        Experimentaremos o Keycloak em nosso MVP.
+        !!! note "Experimente"
+            Ainda não temos nenhum case sobre o Keycloak. Experimentaremos em nosso MVP.
 
         >[Veja mais][16]
 
@@ -168,8 +180,6 @@
 
         > [Veja mais][14]
 
-    ??? note "Spring Gateway"
-    ??? note "Java 17"
     ??? note "Kotlin coroutines"
     ??? question "Nginx"
     ??? question "Vue"
