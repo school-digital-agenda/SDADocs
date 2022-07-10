@@ -1,0 +1,964 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://school-digital-agenda.github.io/SDADocs/tecnologia/tech-sheet/">
+      
+      <link rel="icon" href="/SDADocs/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Tech Sheet - School Digital Agenda</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tech-sheet" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="School Digital Agenda" class="md-header__button md-logo" aria-label="School Digital Agenda" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            School Digital Agenda
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tech Sheet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="School Digital Agenda" class="md-nav__button md-logo" aria-label="School Digital Agenda" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    School Digital Agenda
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        SDA - Engenharia
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Stack de tecnologia
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Stack de tecnologia" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Stack de tecnologia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech-radar/" class="md-nav__link">
+        Tech Radar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Tech Sheet
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../life-cycle/" class="md-nav__link">
+        Ciclo de Vida
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Arquitetura
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Arquitetura" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Arquitetura
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitetura/ref-arch" class="md-nav__link">
+        Arquitetura de referências
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitetura/granularidade" class="md-nav__link">
+        Granularidade de micro-serviços
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitetura/software" class="md-nav__link">
+        Arquitetura de software
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitetura/padroes" class="md-nav__link">
+        Padrões de arquitetura
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          MVP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="MVP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          MVP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitetura/mvp/index" class="md-nav__link">
+        Arquitetura adotada
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitetura/mvp/avaliacoes" class="md-nav__link">
+        Avaliações
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release/" class="md-nav__link">
+        Release Notes
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="tech-sheet">Tech Sheet<a class="headerlink" href="#tech-sheet" title="Permanent link">&para;</a></h1>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Gerenciamento de dados</label><label for="__tabbed_1_2">Plataformas &amp; Infraestrutura</label><label for="__tabbed_1_3">Ferramentas</label><label for="__tabbed_1_4">Linguagens e Frameworks</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<details class="check">
+<summary><abbr title="Amazon Simple Storage Service">Amazon S3</abbr></summary>
+<p>O  <abbr title="Amazon Simple Storage Service">Amazon S3</abbr> é um serviço de armazenamento de objetos que oferece escalabilidade, disponibilidade de dados, segurança e performance. Seu objetivo é armazenar e proteger qualquer volume de dados para uma variedade de casos de uso.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>Recomendamos seu uso para qualquer armazenamento de arquivos dinâmico ou estático.</p>
+</div>
+<blockquote>
+<p><a href="https://aws.amazon.com/pt/s3/">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Postgres</summary>
+<div class="admonition abstract inline end">
+<p class="admonition-title">Caracteristicas</p>
+<ul>
+<li>SGDB Relacional avançado</li>
+<li>Mecanismos transacionais avançados e confiáveis</li>
+<li>Permite a instalação de extensões</li>
+<li>Suporte a queries SQL e JSON</li>
+<li>Comunidade abrangente</li>
+<li>Open-source</li>
+<li>Estável</li>
+</ul>
+</div>
+<p>O Postgres, também conhecido como PostgreSQL, é um sistema de gerenciamento de banco de dados relacional gratuito e de código aberto que enfatiza a extensibilidade e a conformidade com o SQL. Foi originalmente chamado POSTGRES, referindo-se às suas origens como um sucessor do banco de dados Ingres desenvolvido na Universidade da Califórnia, Berkeley.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>E o banco de dados relacional adotado para o projeto, também é possível o armazenamento de dados não relacionais de 
+maneira nativa. E com o uso de extensões podemos ter recursos de pesquisa neste dados similares ao integrados a sistemas não relacionais, como por exemplo o Elasticsearch e o PostGIS, entre outros.</p>
+</div>
+<blockquote>
+<p><a href="https://www.postgresql.org/docs/online-resources/">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="note">
+<summary>MongoDB</summary>
+<p>MongoDB é um banco de dados orientado a documentos multiplataforma. Classificado como um banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas opcionais.</p>
+</details>
+<details class="note">
+<summary>RabbitMQ</summary>
+<div class="admonition abstract inline end">
+<p class="admonition-title">Caracteristicas</p>
+<ul>
+<li>Permite a clusterização</li>
+<li>Alta disponibilidade</li>
+<li>Espelhamento</li>
+<li>Garantia na entrega de mensagens</li>
+<li>Priorização de mensagens</li>
+<li>Persistência em memória e disco</li>
+<li>Federalização</li>
+<li>Extenssível por plugins</li>
+</ul>
+</div>
+<p>RabbitMQ é um message-broker de código aberto que originalmente implementou o <strong><abbr title="Advanced Message Queueing Protocol">AMQP</abbr></strong> e desde então foi estendido com uma arquitetura de plug-in para oferecer suporte ao <strong><abbr title="Streaming Text Oriented Messaging Protocol">Stomp</abbr></strong>, <strong><abbr title="MQ Telemetry Transaport">MQTT</abbr></strong> e outros protocolos.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>Recomendamos o seu uso para a troca de mensagens entre aplicações o que permite o processamento assincrono e com alto nível de desacoplamento entre elas.</p>
+</div>
+</details>
+<details class="note">
+<summary>Redis</summary>
+<p>O Redis é um sistema de armazenamento de estrutura de dados em memória, usado como um banco de dados key-value distribuído, cache e agente de mensagens, com durabilidade opcional. O Redis oferece suporte a diferentes tipos de estruturas de dados abstratas, como strings, listas, mapas, conjuntos, conjuntos classificados, HyperLogLogs, bitmaps, fluxos e índices espaciais.</p>
+</details>
+<details class="question">
+<summary>Kafka</summary>
+</details>
+<details class="question">
+<summary>MariaDB</summary>
+</details>
+<details class="question">
+<summary>MySQL</summary>
+</details>
+<details class="question">
+<summary>Cassandra</summary>
+</details>
+<details class="danger">
+<summary>Dropbox</summary>
+</details>
+<details class="danger">
+<summary>Google Drive</summary>
+</details>
+<details class="danger">
+<summary><abbr title="Java Message Service">JMS</abbr></summary>
+</details>
+</div>
+<div class="tabbed-block">
+<details class="check">
+<summary>Github</summary>
+<p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>Utilizamos o github para armazenamento, versionamento e revisão do código através do git flow.</p>
+</div>
+<blockquote>
+<p><a href="https://docs.github.com/pt">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Github Actions</summary>
+<p>O GitHub Actions facilita a automatização de todos os seus fluxos de trabalho de software, agora com CI/CD de classe mundial. Crie, teste e implante seu código diretamente do GitHub.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>Utilize para automatizar as tarefas de build, teste e deploy de aplicações</p>
+</div>
+<blockquote>
+<p><a href="https://github.com/features/actions">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Github Pages</summary>
+<p>GitHub Pages são páginas da Web públicas hospedadas e publicadas por meio do GitHub.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>Utilize para disponibilizar a documentação de nossas aplicações.</p>
+</div>
+<blockquote>
+<p><a href="https://docs.github.com/en/pages">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>MkDocs</summary>
+<p>O MkDocs é um gerador de site estático simple e rápido, voltado para a construção de documentação de projetos. Os arquivos de origem da documentação são escritos em Markdown e configurados com um único arquivo de configuração YAML.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>Utilizamos o mkdocs como linguagem para implementar a documentação de nossas aplicações.</p>
+</div>
+<blockquote>
+<p><a href="https://www.mkdocs.org/">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Dependabot</summary>
+<p>O dependabot efetua atualizações de dependência automatizadas incorporadas ao GitHub.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>O dependabot deve ser configurado em todos os nossos repositórios.</p>
+</div>
+<blockquote>
+<p><a href="https://github.com/dependabot">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Docker</summary>
+<p>Docker é um conjunto de produtos de plataforma como serviço (PaaS) que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração. Eles podem se comunicar uns com os outros por meio de canais bem definidos. Todos os contêineres são executados por um único kernel do sistema operacional e, portanto, usam menos recursos do que as máquinas virtuais.</p>
+<div class="admonition check">
+<p class="admonition-title">Adote</p>
+<p>Utilizamos o Docker para gerar imagens que serão executadas em containeres em nossos ambientes cloud, disponibilizando os micro serviços para uso em nossa plataforma.</p>
+</div>
+<blockquote>
+<p><a href="https://docs.docker.com/">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="note">
+<summary>Kubernetes</summary>
+<p>O Kubernetes é um sistema de orquestração de contêineres de código aberto para automatizar a implantação, o dimensionamento e o gerenciamento de software.</p>
+<div class="admonition note">
+<p class="admonition-title">Experimente</p>
+<p>Estamos avaliando sua utilização em conjunto com o <abbr title="Elastic Kubernetes Service">EKS</abbr></p>
+</div>
+</details>
+<details class="note">
+<summary>Amazon <abbr title="Elastic Kubernetes Service">EKS</abbr></summary>
+</details>
+<details class="question">
+<summary>CircleCI</summary>
+</details>
+<details class="question">
+<summary>Jenkins</summary>
+</details>
+<details class="danger">
+<summary>Amazon <abbr title="Elastic Container Service">ECS</abbr></summary>
+<p>O Amazon <abbr title="Elastic Container Service">ECS</abbr> é um serviço de orquestração de contêineres totalmente gerenciado que ajuda você a implementar, gerenciar facilmente e escalar aplicações em contêiner. Ele se integra completamente ao restante da plataforma <abbr title="Amazon Web Services">AWS</abbr> para fornecer uma solução segura e fácil de usar para a execução de cargas de trabalho de contêiner na nuvem e agora em sua infraestrutura com o Amazon <abbr title="Elastic Container Service">ECS</abbr> Anywhere.</p>
+<div class="admonition danger">
+<p class="admonition-title">Não utilize!</p>
+<p>Apesar das facilidades, NÃO RECOMENDAMOS o seu uso por acoplar a solução a um único provedor cloud. Em seu lugar adotamos o kubernetes e soluções gerenciadas baseadas neste, como o <abbr title="Elastic Kubernetes Service">EKS</abbr> a própria <abbr title="Amazon Web Services">AWS</abbr>.</p>
+</div>
+</details>
+</div>
+<div class="tabbed-block">
+<details class="check">
+<summary>Gradle</summary>
+<p>Gradle é um sistema de automação de compilação de código aberto que se baseia nos conceitos de Apache Ant e Apache Maven e introduz uma linguagem de domínio específico (DSL) baseada em Groovy para declarar a configuração do projeto. Projetado para multi-projetos que podem ter alto crescimento, e suporta compilações incrementais, de modo que qualquer tarefa dependente dessas partes não precisa ser reexecutada.</p>
+<p>Adotamos o gradle para automatizar e gerenciar nossos projetos de liguagens baseadas em JVMs.</p>
+<blockquote>
+<p><a href="https://gradle.org/guides/">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary><abbr title="Java Code Coverage Tool">JaCoCo</abbr></summary>
+<p>As ferramentas de cobertura de código Java são de dois tipos: primeiro, ferramentas que adicionam instruções ao código-fonte Java e requerem sua recompilação. Segundo, ferramentas que instrumentam o bytecode, antes ou durante a execução. O objetivo é descobrir quais partes do código são testadas registrando as linhas de código executadas durante a execução de um teste.</p>
+<blockquote>
+<p><a href="https://www.jacoco.org/jacoco/trunk/doc/">Veja mais</a></p>
+</blockquote>
+<p>Utilizamos o <abbr title="Java Code Coverage Tool">JaCoCo</abbr> para análise da cobertura de testes em nosso codigo, integrado ao gradle através de seu plugin.</p>
+<blockquote>
+<p><a href="https://docs.gradle.org/current/userguide/jacoco_plugin.html">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="note">
+<summary>Keycloak</summary>
+<div class="admonition abstract inline end">
+<p class="admonition-title">Caracteristicas</p>
+<ul>
+<li>Solução Open Source</li>
+<li>Suporte a múltiplos provedores de identidade</li>
+<li>Fácil de customizar</li>
+<li>Mantida por desenvolvedores da Redhat</li>
+<li>Suporte a MFA</li>
+<li>SDK oficial para spring boot</li>
+<li>Desenvolvimento de SDKs pela comunidade</li>
+<li>Funcionalidades completas</li>
+</ul>
+</div>
+<p>O Keycloak é um software de código aberto que permitir o <em>"single sign-on"</em> com <em>"Identity and Access Management"</em> voltado para aplicativos e serviços modernos. Em março de 2018, este projeto da comunidade WildFly está sob a administração da Red Hat, que o utiliza como projeto upstream para seu produto RH-SSO.</p>
+<div class="admonition note">
+<p class="admonition-title">Experimente</p>
+<p>Ainda não temos nenhum case sobre o Keycloak. Experimentaremos em nosso MVP.</p>
+</div>
+<blockquote>
+<p><a href="https://www.keycloak.org/">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="note">
+<summary>Micrometer</summary>
+</details>
+<details class="note">
+<summary>Grafana</summary>
+</details>
+<details class="note">
+<summary>Prometheus</summary>
+</details>
+<details class="question">
+<summary>Datadog</summary>
+</details>
+<details class="question">
+<summary>Terraform</summary>
+</details>
+<details class="question">
+<summary>Sonar</summary>
+</details>
+<details class="danger">
+<summary>Maven</summary>
+</details>
+</div>
+<div class="tabbed-block">
+<details class="check">
+<summary>Kotlin</summary>
+<p>Kotlin é uma linguagem de programação multiplataforma, orientada a objetos e funcional, concisa e estaticamente tipada, que compila para a Máquina virtual Java e que também pode ser traduzida para a linguagem JavaScript e compilada para código nativo.</p>
+<p>A versão da JVM (Java Virtual Machine) de sua biblioteca padrão depende da Java Class Library, mas a inferência de tipos permite que sua sintaxe seja mais concisa. Apesar de possuir uma sintaxe mais concisa e um pouco diferente da linguagem Java, Kotlin é projetada para ter uma interoperabilidade total com código Java.</p>
+<blockquote>
+<p><a href="https://developer.android.com/kotlin">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Spring</summary>
+<p>O Spring é um framework de aplicação e container de <abbr title="Inversão de Controle (Inversion of Control)">IoC</abbr>, de código aberto, para a plataforma Java. Os principais recursos da estrutura podem ser usados por qualquer aplicativo Java, mas existem extensões para a construção de aplicativos da Web sobre a plataforma <abbr title="Java Enterprise Edition">Java EE</abbr>.</p>
+<blockquote>
+<p><a href="https://spring.io/">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Spring Boot</summary>
+<p>O Spring Boot facilita a criação de aplicativos independentes baseados em Spring onde você pode "apenas executar" uma aplicação. Com o spring boot a maioria dos aplicativos Spring Boot precisa de configuração mínima do Spring.</p>
+<blockquote>
+<p><a href="https://spring.io/projects/spring-boot">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Spring Cloud</summary>
+<p>O Spring Cloud é parte do Spring Framework, seu conjunto de projetos tem o objetivo de facilitar o desenvolvimento para nuvem, baseado no <a href="https://12factor.net/">12-Factor App</a>.</p>
+<blockquote>
+<p><a href="https://spring.io/cloud">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="check">
+<summary>Project Reactor</summary>
+<div class="admonition note inline end">
+<p class="admonition-title">Indicações</p>
+<p>Indicamos seu uso em aplicações que terão alta demanda de requisições, como</p>
+<ul>
+<li>Gateways e BFFs em geral</li>
+<li>Aplicações que respondem diretamente há um fluxo reativo</li>
+</ul>
+</div>
+<p>O Reactor é uma biblioteca reativa de quarta geração, baseada na especificação Reactive Streams, para construir aplicativos não bloqueantes na JVM. O REACTIVE CORE Reactor é totalmente não bloqueante e fornece gerenciamento de demanda eficiente. Ele interage diretamente com a API funcional do Java, CompletableFuture, Stream e Duration.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cuidados</p>
+<p>Porém, deve-se ter cuidado ao adotar o Reactor para as situações:</p>
+<ul>
+<li>Fluxos transacionais com necessidade de garantia ACID</li>
+<li>Integração com tecnologias que não possuem o suporte a biblioteca reactor, como por exemplo o spring-cloud-stream.</li>
+<li>Aplicações sem necessidade de escala, como telas de cadastros, podem ter uma complexidade desnecessária</li>
+</ul>
+</div>
+<blockquote>
+<p><a href="https://projectreactor.io/learn">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="note">
+<summary><abbr title="Reactive Relational Database Connectivity">R2DBC</abbr></summary>
+<p><strong>Spring Data <abbr title="Reactive Relational Database Connectivity">R2DBC</abbr></strong> facilita a implementação de repositórios baseados em <abbr title="Reactive Relational Database Connectivity">R2DBC</abbr>, sendo uma especificação para integrar bancos de dados SQL usando drivers reativos. 
+Seu objetivo principal é a criação de aplicativos baseados em Spring que usam tecnologias de acesso a dados relacionais em uma stack de aplicativos reativos.</p>
+<div class="admonition question avalie">
+<p class="admonition-title">Question</p>
+<p>Ao adotar uma programação reativa, sempre utilize o <abbr title="Reactive Relational Database Connectivity">R2DBC</abbr> para acessar bancos de dados relacionais.</p>
+<p>Porém, sempre avalie a complexidade do reactor em relação aos requisitos de integridade relacional e transacional. Quando estes requisitos são muito fortes, uma programação reativa tende a ser complexa em relação a outros modelos.</p>
+</div>
+<blockquote>
+<p><a href="https://spring.io/projects/spring-data-r2dbc">Veja mais</a></p>
+</blockquote>
+</details>
+<details class="note">
+<summary>Kotlin coroutines</summary>
+</details>
+<details class="question">
+<summary>Nginx</summary>
+</details>
+<details class="question">
+<summary>Vue</summary>
+</details>
+<details class="question">
+<summary>Angular</summary>
+</details>
+<details class="question">
+<summary>Flutter</summary>
+</details>
+<details class="question">
+<summary>Python</summary>
+</details>
+<details class="question">
+<summary>Micronaut</summary>
+</details>
+<details class="question">
+<summary>Quarkus</summary>
+</details>
+<details class="danger">
+<summary>Spring Batch</summary>
+</details>
+<details class="danger">
+<summary>Spring Data REST</summary>
+</details>
+<details class="danger">
+<summary>NestJS</summary>
+</details>
+<details class="danger">
+<summary>NodeJS</summary>
+</details>
+<details class="danger">
+<summary>React</summary>
+</details>
+<details class="danger">
+<summary>Kotlin Mobile</summary>
+</details>
+<details class="danger">
+<summary>Swing</summary>
+</details>
+</div>
+</div>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Ultima atualização:
+      2022-07-10
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Voltar para o topo
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+      
+        
+        <a href="../tech-radar/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Tech Radar" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Tech Radar
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../life-cycle/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Ciclo de Vida" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Ciclo de Vida
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Rodrigo Fasioli
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de Transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de Transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Perdido", "select.version.title": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
