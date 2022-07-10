@@ -9,11 +9,26 @@
 
         >[Veja mais][10]
 
+    ??? check "Postgres"
+        !!! abstract inline end "Caracteristicas"
+            - SGDB Relacional avançado
+            - Mecanismos transacionais avançados e confiáveis
+            - Permite a instalação de extensões
+            - Suporte a queries SQL e JSON
+            - Comunidade abrangente
+            - Open-source
+            - Estável
+
+        O Postgres, também conhecido como PostgreSQL, é um sistema de gerenciamento de banco de dados relacional gratuito e de código aberto que enfatiza a extensibilidade e a conformidade com o SQL. Foi originalmente chamado POSTGRES, referindo-se às suas origens como um sucessor do banco de dados Ingres desenvolvido na Universidade da Califórnia, Berkeley.
+
+        !!! check "Adote"
+            E o banco de dados relacional adotado para o projeto, também é possível o armazenamento de dados não relacionais de 
+            maneira nativa. E com o uso de extensões podemos ter recursos de pesquisa neste dados similares ao integrados a sistemas não relacionais, como por exemplo o Elasticsearch e o PostGIS, entre outros.
+
+        >[Veja mais][17]
+
     ??? note "MongoDB"
         MongoDB é um banco de dados orientado a documentos multiplataforma. Classificado como um banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas opcionais.
-
-    ??? note "Postgres"
-        O Postgres, também conhecido como PostgreSQL, é um sistema de gerenciamento de banco de dados relacional gratuito e de código aberto que enfatiza a extensibilidade e a conformidade com o SQL. Foi originalmente chamado POSTGRES, referindo-se às suas origens como um sucessor do banco de dados Ingres desenvolvido na Universidade da Califórnia, Berkeley.
 
     ??? note "RabbitMQ"
         !!! abstract inline end "Caracteristicas"
@@ -180,6 +195,36 @@
 
         > [Veja mais][14]
 
+    ??? check "Project Reactor"
+        !!! note inline end "Indicações"
+            Indicamos seu uso em aplicações que terão alta demanda de requisições, como
+            
+            - Gateways e BFFs em geral
+            - Aplicações que respondem diretamente há um fluxo reativo
+            
+        O Reactor é uma biblioteca reativa de quarta geração, baseada na especificação Reactive Streams, para construir aplicativos não bloqueantes na JVM. O REACTIVE CORE Reactor é totalmente não bloqueante e fornece gerenciamento de demanda eficiente. Ele interage diretamente com a API funcional do Java, CompletableFuture, Stream e Duration.
+
+        !!! warning "Cuidados"
+            Porém, deve-se ter cuidado ao adotar o Reactor para as situações:
+
+            - Fluxos transacionais com necessidade de garantia ACID
+            - Integração com tecnologias que não possuem o suporte a biblioteca reactor, como por exemplo o spring-cloud-stream.
+            - Aplicações sem necessidade de escala, como telas de cadastros, podem ter uma complexidade desnecessária
+
+        > [Veja mais][18]
+        
+    ??? note "R2DBC"
+
+        **Spring Data R2DBC** facilita a implementação de repositórios baseados em R2DBC, sendo uma especificação para integrar bancos de dados SQL usando drivers reativos. 
+        Seu objetivo principal é a criação de aplicativos baseados em Spring que usam tecnologias de acesso a dados relacionais em uma stack de aplicativos reativos.
+
+        !!! question Avalie
+            Ao adotar uma programação reativa, sempre utilize o R2DBC para acessar bancos de dados relacionais.
+            
+            Porém, sempre avalie a complexidade do reactor em relação aos requisitos de integridade relacional e transacional. Quando estes requisitos são muito fortes, uma programação reativa tende a ser complexa em relação a outros modelos.
+
+        > [Veja mais][19]
+
     ??? note "Kotlin coroutines"
     ??? question "Nginx"
     ??? question "Vue"
@@ -207,6 +252,7 @@
 *[ECS]: Elastic Container Service
 *[EKS]: Elastic Kubernetes Service
 *[AWS]: Amazon Web Services
+*[R2DBC]: Reactive Relational Database Connectivity
 
 [1]: https://www.mkdocs.org/
 [2]: https://github.com/features/actions
@@ -224,3 +270,6 @@
 [14]: https://spring.io/cloud
 [15]: https://12factor.net/
 [16]: https://www.keycloak.org/
+[17]: https://www.postgresql.org/docs/online-resources/
+[18]: https://projectreactor.io/learn
+[19]: https://spring.io/projects/spring-data-r2dbc
